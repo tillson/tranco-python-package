@@ -11,7 +11,7 @@ class TrancoList():
     def __init__(self, date, list_id, lst):
         self.date = date
         self.list_id = list_id
-        self.list_page = "https://tranco-list.eu/list/{}/1000000".format(list_id)
+        self.list_page = "https://tranco-list.eu/list/{}/full".format(list_id)
         self.list = {domain: index for index, domain in enumerate(lst, start=1)}
 
     def top(self, num=1000000):
